@@ -1,0 +1,59 @@
+[
+  { "title": "Memento", "year": 2000, "director": "Christopher Nolan", "genres": ["Mystery","Thriller","Drama"] },
+  { "title": "The Dark Knight", "year": 2008, "director": "Christopher Nolan", "genres": ["Action","Crime","Drama"] },
+  { "title": "Inception", "year": 2010, "director": "Christopher Nolan", "genres": ["Action","Sci-Fi","Thriller"] },
+  { "title": "Interstellar", "year": 2014, "director": "Christopher Nolan", "genres": ["Sci-Fi","Drama","Adventure"] },
+  { "title": "Dunkirk", "year": 2017, "director": "Christopher Nolan", "genres": ["War","Drama","History"] },
+  { "title": "Oppenheimer", "year": 2023, "director": "Christopher Nolan", "genres": ["Biography","Drama","History"] },
+
+  { "title": "Lady Bird", "year": 2017, "director": "Greta Gerwig", "genres": ["Drama","Comedy"] },
+  { "title": "Little Women", "year": 2019, "director": "Greta Gerwig", "genres": ["Drama","Romance"] },
+  { "title": "Barbie", "year": 2023, "director": "Greta Gerwig", "genres": ["Comedy","Adventure","Fantasy"] },
+
+  { "title": "Reservoir Dogs", "year": 1992, "director": "Quentin Tarantino", "genres": ["Crime","Thriller"] },
+  { "title": "Pulp Fiction", "year": 1994, "director": "Quentin Tarantino", "genres": ["Crime","Drama"] },
+  { "title": "Inglourious Basterds", "year": 2009, "director": "Quentin Tarantino", "genres": ["War","Adventure","Drama"] },
+  { "title": "Django Unchained", "year": 2012, "director": "Quentin Tarantino", "genres": ["Western","Drama","Adventure"] },
+
+  { "title": "Taxi Driver", "year": 1976, "director": "Martin Scorsese", "genres": ["Crime","Drama"] },
+  { "title": "Goodfellas", "year": 1990, "director": "Martin Scorsese", "genres": ["Crime","Drama"] },
+  { "title": "The Irishman", "year": 2019, "director": "Martin Scorsese", "genres": ["Crime","Drama"] },
+
+  { "title": "Jaws", "year": 1975, "director": "Steven Spielberg", "genres": ["Thriller","Adventure"] },
+  { "title": "E.T. the Extra-Terrestrial", "year": 1982, "director": "Steven Spielberg", "genres": ["Family","Sci-Fi","Adventure"] },
+  { "title": "Jurassic Park", "year": 1993, "director": "Steven Spielberg", "genres": ["Action","Adventure","Sci-Fi"] },
+
+  { "title": "Prisoners", "year": 2013, "director": "Denis Villeneuve", "genres": ["Crime","Thriller","Drama"] },
+  { "title": "Arrival", "year": 2016, "director": "Denis Villeneuve", "genres": ["Sci-Fi","Drama"] },
+  { "title": "Dune: Part One", "year": 2021, "director": "Denis Villeneuve", "genres": ["Sci-Fi","Adventure","Drama"] },
+
+  { "title": "My Neighbor Totoro", "year": 1988, "director": "Hayao Miyazaki", "genres": ["Animation","Family","Fantasy"] },
+  { "title": "Princess Mononoke", "year": 1997, "director": "Hayao Miyazaki", "genres": ["Animation","Fantasy","Adventure"] },
+  { "title": "Spirited Away", "year": 2001, "director": "Hayao Miyazaki", "genres": ["Animation","Fantasy","Adventure"] },
+
+  { "title": "Memories of Murder", "year": 2003, "director": "Bong Joon-ho", "genres": ["Crime","Drama","Thriller"] },
+  { "title": "Parasite", "year": 2019, "director": "Bong Joon-ho", "genres": ["Drama","Thriller"] },
+
+  { "title": "Moonrise Kingdom", "year": 2012, "director": "Wes Anderson", "genres": ["Romance","Comedy","Drama"] },
+  { "title": "The Grand Budapest Hotel", "year": 2014, "director": "Wes Anderson", "genres": ["Comedy","Drama","Adventure"] },
+
+  { "title": "Alien", "year": 1979, "director": "Ridley Scott", "genres": ["Horror","Sci-Fi"] },
+  { "title": "The Martian", "year": 2015, "director": "Ridley Scott", "genres": ["Sci-Fi","Adventure","Drama"] },
+
+  { "title": "The Lord of the Rings: The Fellowship of the Ring", "year": 2001, "director": "Peter Jackson", "genres": ["Fantasy","Adventure"] },
+  { "title": "The Lord of the Rings: The Two Towers", "year": 2002, "director": "Peter Jackson", "genres": ["Fantasy","Adventure"] },
+  { "title": "The Lord of the Rings: The Return of the King", "year": 2003, "director": "Peter Jackson", "genres": ["Fantasy","Adventure"] },
+
+  { "title": "The Terminator", "year": 1984, "director": "James Cameron", "genres": ["Action","Sci-Fi"] },
+  { "title": "Titanic", "year": 1997, "director": "James Cameron", "genres": ["Drama","Romance"] },
+
+  { "title": "Se7en", "year": 1995, "director": "David Fincher", "genres": ["Crime","Thriller"] },
+  { "title": "Fight Club", "year": 1999, "director": "David Fincher", "genres": ["Drama"] },
+  { "title": "The Social Network", "year": 2010, "director": "David Fincher", "genres": ["Drama","Biography"] },
+
+  { "title": "Fargo", "year": 1996, "director": "Joel & Ethan Coen", "genres": ["Crime","Drama"] },
+  { "title": "No Country for Old Men", "year": 2007, "director": "Joel & Ethan Coen", "genres": ["Crime","Thriller"] },
+
+  { "title": "Whiplash", "year": 2014, "director": "Damien Chazelle", "genres": ["Drama","Music"] },
+  { "title": "La La Land", "year": 2016, "director": "Damien Chazelle", "genres": ["Romance","Drama","Music"] }
+]

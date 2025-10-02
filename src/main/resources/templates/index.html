@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exerciții Stream API – Q1</title>
+    <style>
+        :root{
+            --bg:#0b1220; --panel:#121a2b; --muted:#8aa0bf; --text:#e6edf7; --accent:#6ea8fe; --danger:#ff6b6b;
+            --radius:16px;
+        }
+        *{box-sizing:border-box}
+        body{
+            margin:0; font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;
+            background:radial-gradient(1200px 600px at 10% -10%, #1a2750 0%, transparent 50%) , var(--bg);
+            color:var(--text);
+        }
+        header{padding:32px 20px 16px; max-width:1100px; margin:0 auto;}
+        h1{margin:0 0 6px; font-weight:700; letter-spacing:0.3px}
+        p.lead{margin:0; color:var(--muted)}
+        main{max-width:1100px; margin:20px auto 48px; padding:0 20px;}
+        .card{
+            background:linear-gradient(180deg,#151e33 0%, #111827 100%);
+            border:1px solid rgba(255,255,255,0.06);
+            box-shadow:0 10px 30px rgba(0,0,0,0.35);
+            border-radius:var(--radius);
+            padding:18px; margin-bottom:22px;
+        }
+        .card h2{margin:0 0 8px; font-size:20px}
+        .card p{margin:0 0 12px; color:var(--muted)}
+        .row{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+        button{
+            border:none; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:600; letter-spacing:0.2px;
+            background:var(--accent); color:#0a0f1c; transition:transform .08s ease, filter .2s ease;
+        }
+        button:hover{filter:brightness(1.05)}
+        button:active{transform:translateY(1px)}
+        .muted{color:var(--muted)}
+        .pill{display:inline-block; padding:4px 10px; border:1px solid rgba(255,255,255,0.1); border-radius:999px; font-size:12px}
+        .table-wrap{overflow:auto; border-radius:12px; border:1px solid rgba(255,255,255,0.08)}
+        table{width:100%; border-collapse:collapse; min-width:480px;}
+        thead th{
+            text-align:left; padding:10px 12px; font-size:13px; color:#b7c4da; background:#0e1626; position:sticky; top:0;
+        }
+        tbody td{padding:10px 12px; border-top:1px solid rgba(255,255,255,0.06)}
+        tr:hover td{background:rgba(255,255,255,0.02)}
+        .right{text-align:right}
+        .status{margin-left:auto; font-size:13px}
+        .spinner{width:16px; height:16px; border:2px solid rgba(255,255,255,0.25); border-top-color:#fff; border-radius:50%;
+            display:inline-block; animation:spin 1s linear infinite; vertical-align:-3px; margin-right:6px}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .error{color:var(--danger); font-weight:600}
+        footer{max-width:1100px; margin:24px auto 48px; padding:0 20px; color:var(--muted); font-size:13px}
+        code.inline{background:#0e1626; border:1px solid rgba(255,255,255,0.08); padding:2px 6px; border-radius:6px}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Exerciții Stream API – Demo Web</h1>
+    <p class="lead">Q1: Numărul de filme pentru fiecare regizor (GET <code class="inline">/api/exercises/q1</code>)</p>
+</header>
+
+<main>
+    <section class="card">
+        <div class="row">
+            <h2>Q1) Filme per regizor</h2>
+            <span class="pill">Streams: <strong>groupingBy</strong> + <strong>counting</strong></span>
+            <span id="status" class="status muted">gata</span>
+        </div>
+        <p>Apasă Run pentru a cere rezultatele din backend și a le sorta descrescător după #filme.</p>
+        <div class="row" style="margin:10px 0 14px">
+            <button id="run">Run Q1</button>
+            <button id="reload">Reload</button>
+            <button id="clear">Clear</button>
+        </div>
+
+        <div class="table-wrap" id="table-wrap" hidden>
+            <table id="result">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Regizor</th>
+                    <th class="right"># Filme</th>
+                </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+        <div id="message" class="muted" style="margin-top:8px"></div>
+    </section>
+</main>
+
+<footer>
+    Hint: endpoint-ul trebuie să returneze un JSON de forma <code class="inline">{ "Christopher Nolan": 10, "Greta Gerwig": 3, ... }</code>.
+</footer>
+
+<script>
+    const statusEl = document.getElementById('status');
+    const tbody = document.getElementById('tbody');
+    const wrap = document.getElementById('table-wrap');
+    const msg = document.getElementById('message');
+
+    async function fetchQ1() {
+        setStatus('loading');
+        msg.textContent = '';
+        try {
+            const res = await fetch('/stream/exercice/q1', { headers: { 'Accept': 'application/json' }});
+            if (!res.ok) {
+                const text = await res.text();
+                throw new Error(text || ('HTTP ' + res.status));
+            }
+            /** @type {Record<string, number>} */
+            const data = await res.json();
+
+            // transformă în [director, count], sortează desc
+            const rows = Object.entries(data).sort((a,b) => b[1] - a[1]);
+
+            // populate table
+            tbody.innerHTML = '';
+            rows.forEach(([director, count], idx) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+            <td>${idx + 1}</td>
+            <td>${escapeHtml(director)}</td>
+            <td class="right">${count}</td>`;
+                tbody.appendChild(tr);
+            });
+
+            wrap.hidden = rows.length === 0;
+            if (rows.length === 0) msg.textContent = 'Nu s-au găsit rezultate.';
+            setStatus('ready', `${rows.length} regizori`);
+        } catch (err) {
+            wrap.hidden = true;
+            msg.innerHTML = `<span class="error">Eroare:</span> ${escapeHtml(err.message)}`;
+            setStatus('error');
+        }
+    }
+
+    function setStatus(state, text='') {
+        if (state === 'loading') {
+            statusEl.innerHTML = `<span class="spinner"></span>apel...`;
+        } else if (state === 'error') {
+            statusEl.textContent = 'eroare';
+        } else {
+            statusEl.textContent = text ? `gata · ${text}` : 'gata';
+        }
+    }
+
+    function escapeHtml(s){
+        return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+    }
+
+    document.getElementById('run').addEventListener('click', fetchQ1);
+    document.getElementById('reload').addEventListener('click', fetchQ1);
+    document.getElementById('clear').addEventListener('click', () => {
+        tbody.innerHTML = ''; document.getElementById('table-wrap').hidden = true;
+        msg.textContent = ''; setStatus('ready');
+    });
+
+    // opțional: auto-run la încărcare
+    // fetchQ1();
+</script>
+</body>
+</html>
