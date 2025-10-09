@@ -1,0 +1,450 @@
+[
+  {
+    "code": "ROU",
+    "name": "Romania",
+    "continent": "Europe",
+    "surfaceArea": 238397.0,
+    "population": 19050000,
+    "gnp": 285.5,
+    "capital": 1,
+    "cities": [
+      { "id": 1, "name": "Bucharest", "population": 1883425, "countryCode": "ROU" },
+      { "id": 2, "name": "Cluj-Napoca", "population": 286598, "countryCode": "ROU" },
+      { "id": 3, "name": "Timișoara", "population": 319279, "countryCode": "ROU" }
+    ]
+  },
+  {
+    "code": "USA",
+    "name": "United States",
+    "continent": "North America",
+    "surfaceArea": 9833520.0,
+    "population": 331000000,
+    "gnp": 21433.2,
+    "capital": 10,
+    "cities": [
+      { "id": 10, "name": "Washington, D.C.", "population": 705749, "countryCode": "USA" },
+      { "id": 11, "name": "New York", "population": 8336817, "countryCode": "USA" },
+      { "id": 12, "name": "Los Angeles", "population": 3979576, "countryCode": "USA" }
+    ]
+  },
+  {
+    "code": "FRA",
+    "name": "France",
+    "continent": "Europe",
+    "surfaceArea": 551695.0,
+    "population": 67390000,
+    "gnp": 2715.5,
+    "capital": 20,
+    "cities": [
+      { "id": 20, "name": "Paris", "population": 2148327, "countryCode": "FRA" },
+      { "id": 21, "name": "Lyon", "population": 515695, "countryCode": "FRA" },
+      { "id": 22, "name": "Marseille", "population": 861635, "countryCode": "FRA" }
+    ]
+  },
+  {
+    "code": "DEU",
+    "name": "Germany",
+    "continent": "Europe",
+    "surfaceArea": 357022.0,
+    "population": 83240000,
+    "gnp": 4211.0,
+    "capital": 30,
+    "cities": [
+      { "id": 30, "name": "Berlin", "population": 3769495, "countryCode": "DEU" },
+      { "id": 31, "name": "Munich", "population": 1488202, "countryCode": "DEU" },
+      { "id": 32, "name": "Hamburg", "population": 1841179, "countryCode": "DEU" }
+    ]
+  },
+  {
+    "code": "ITA",
+    "name": "Italy",
+    "continent": "Europe",
+    "surfaceArea": 301340.0,
+    "population": 59000000,
+    "gnp": 2076.0,
+    "capital": 40,
+    "cities": [
+      { "id": 40, "name": "Rome", "population": 2873000, "countryCode": "ITA" },
+      { "id": 41, "name": "Milan", "population": 1378689, "countryCode": "ITA" },
+      { "id": 42, "name": "Naples", "population": 962589, "countryCode": "ITA" }
+    ]
+  },
+  {
+    "code": "ESP",
+    "name": "Spain",
+    "continent": "Europe",
+    "surfaceArea": 505990.0,
+    "population": 47350000,
+    "gnp": 1425.0,
+    "capital": 50,
+    "cities": [
+      { "id": 50, "name": "Madrid", "population": 3223334, "countryCode": "ESP" },
+      { "id": 51, "name": "Barcelona", "population": 1620343, "countryCode": "ESP" },
+      { "id": 52, "name": "Valencia", "population": 791413, "countryCode": "ESP" }
+    ]
+  },
+  {
+    "code": "GBR",
+    "name": "United Kingdom",
+    "continent": "Europe",
+    "surfaceArea": 243610.0,
+    "population": 67800000,
+    "gnp": 2829.0,
+    "capital": 60,
+    "cities": [
+      { "id": 60, "name": "London", "population": 8982000, "countryCode": "GBR" },
+      { "id": 61, "name": "Manchester", "population": 553230, "countryCode": "GBR" },
+      { "id": 62, "name": "Birmingham", "population": 1141816, "countryCode": "GBR" }
+    ]
+  },
+  {
+    "code": "CAN",
+    "name": "Canada",
+    "continent": "North America",
+    "surfaceArea": 9984670.0,
+    "population": 38000000,
+    "gnp": 1643.0,
+    "capital": 70,
+    "cities": [
+      { "id": 70, "name": "Ottawa", "population": 994837, "countryCode": "CAN" },
+      { "id": 71, "name": "Toronto", "population": 2731571, "countryCode": "CAN" },
+      { "id": 72, "name": "Vancouver", "population": 631486, "countryCode": "CAN" }
+    ]
+  },
+  {
+    "code": "AUS",
+    "name": "Australia",
+    "continent": "Oceania",
+    "surfaceArea": 7692024.0,
+    "population": 25690000,
+    "gnp": 1393.0,
+    "capital": 80,
+    "cities": [
+      { "id": 80, "name": "Canberra", "population": 431380, "countryCode": "AUS" },
+      { "id": 81, "name": "Sydney", "population": 5312163, "countryCode": "AUS" },
+      { "id": 82, "name": "Melbourne", "population": 5078193, "countryCode": "AUS" }
+    ]
+  },
+  {
+    "code": "JPN",
+    "name": "Japan",
+    "continent": "Asia",
+    "surfaceArea": 377975.0,
+    "population": 125800000,
+    "gnp": 5065.0,
+    "capital": 90,
+    "cities": [
+      { "id": 90, "name": "Tokyo", "population": 13929286, "countryCode": "JPN" },
+      { "id": 91, "name": "Osaka", "population": 2753860, "countryCode": "JPN" },
+      { "id": 92, "name": "Yokohama", "population": 3748785, "countryCode": "JPN" }
+    ]
+  },
+  {
+    "code": "CHN",
+    "name": "China",
+    "continent": "Asia",
+    "surfaceArea": 9596961.0,
+    "population": 1402000000,
+    "gnp": 14924.0,
+    "capital": 100,
+    "cities": [
+      { "id": 100, "name": "Beijing", "population": 21540000, "countryCode": "CHN" },
+      { "id": 101, "name": "Shanghai", "population": 24870895, "countryCode": "CHN" },
+      { "id": 102, "name": "Shenzhen", "population": 17560000, "countryCode": "CHN" }
+    ]
+  },
+  {
+    "code": "IND",
+    "name": "India",
+    "continent": "Asia",
+    "surfaceArea": 3287263.0,
+    "population": 1391000000,
+    "gnp": 3173.0,
+    "capital": 110,
+    "cities": [
+      { "id": 110, "name": "New Delhi", "population": 16787941, "countryCode": "IND" },
+      { "id": 111, "name": "Mumbai", "population": 12442373, "countryCode": "IND" },
+      { "id": 112, "name": "Bengaluru", "population": 8443675, "countryCode": "IND" }
+    ]
+  },
+  {
+    "code": "BRA",
+    "name": "Brazil",
+    "continent": "South America",
+    "surfaceArea": 8515767.0,
+    "population": 213993000,
+    "gnp": 1445.0,
+    "capital": 120,
+    "cities": [
+      { "id": 120, "name": "Brasília", "population": 3055149, "countryCode": "BRA" },
+      { "id": 121, "name": "São Paulo", "population": 12325232, "countryCode": "BRA" },
+      { "id": 122, "name": "Rio de Janeiro", "population": 6747815, "countryCode": "BRA" }
+    ]
+  },
+  {
+    "code": "MEX",
+    "name": "Mexico",
+    "continent": "North America",
+    "surfaceArea": 1964375.0,
+    "population": 128900000,
+    "gnp": 1076.0,
+    "capital": 130,
+    "cities": [
+      { "id": 130, "name": "Mexico City", "population": 9209944, "countryCode": "MEX" },
+      { "id": 131, "name": "Guadalajara", "population": 1495182, "countryCode": "MEX" },
+      { "id": 132, "name": "Monterrey", "population": 1135512, "countryCode": "MEX" }
+    ]
+  },
+  {
+    "code": "ZAF",
+    "name": "South Africa",
+    "continent": "Africa",
+    "surfaceArea": 1221037.0,
+    "population": 59310000,
+    "gnp": 335.0,
+    "capital": 140,
+    "cities": [
+      { "id": 140, "name": "Pretoria", "population": 741651, "countryCode": "ZAF" },
+      { "id": 141, "name": "Johannesburg", "population": 957441, "countryCode": "ZAF" },
+      { "id": 142, "name": "Cape Town", "population": 433688, "countryCode": "ZAF" }
+    ]
+  },
+  {
+    "code": "EGY",
+    "name": "Egypt",
+    "continent": "Africa",
+    "surfaceArea": 1002450.0,
+    "population": 104000000,
+    "gnp": 404.0,
+    "capital": 150,
+    "cities": [
+      { "id": 150, "name": "Cairo", "population": 9900000, "countryCode": "EGY" },
+      { "id": 151, "name": "Alexandria", "population": 5200000, "countryCode": "EGY" },
+      { "id": 152, "name": "Giza", "population": 3650000, "countryCode": "EGY" }
+    ]
+  },
+  {
+    "code": "TUR",
+    "name": "Turkey",
+    "continent": "Asia",
+    "surfaceArea": 783562.0,
+    "population": 84339067,
+    "gnp": 720.1,
+    "capital": 160,
+    "cities": [
+      { "id": 160, "name": "Ankara", "population": 5503985, "countryCode": "TUR" },
+      { "id": 161, "name": "Istanbul", "population": 15462452, "countryCode": "TUR" },
+      { "id": 162, "name": "Izmir", "population": 4320519, "countryCode": "TUR" }
+    ]
+  },
+  {
+    "code": "KOR",
+    "name": "South Korea",
+    "continent": "Asia",
+    "surfaceArea": 100210.0,
+    "population": 51780000,
+    "gnp": 1798.0,
+    "capital": 170,
+    "cities": [
+      { "id": 170, "name": "Seoul", "population": 9776000, "countryCode": "KOR" },
+      { "id": 171, "name": "Busan", "population": 3414000, "countryCode": "KOR" },
+      { "id": 172, "name": "Incheon", "population": 2951000, "countryCode": "KOR" }
+    ]
+  },
+  {
+    "code": "NLD",
+    "name": "Netherlands",
+    "continent": "Europe",
+    "surfaceArea": 41543.0,
+    "population": 17450000,
+    "gnp": 913.0,
+    "capital": 180,
+    "cities": [
+      { "id": 180, "name": "Amsterdam", "population": 872757, "countryCode": "NLD" },
+      { "id": 181, "name": "Rotterdam", "population": 651446, "countryCode": "NLD" },
+      { "id": 182, "name": "The Hague", "population": 545863, "countryCode": "NLD" }
+    ]
+  },
+  {
+    "code": "SWE",
+    "name": "Sweden",
+    "continent": "Europe",
+    "surfaceArea": 450295.0,
+    "population": 10400000,
+    "gnp": 538.0,
+    "capital": 190,
+    "cities": [
+      { "id": 190, "name": "Stockholm", "population": 975551, "countryCode": "SWE" },
+      { "id": 191, "name": "Gothenburg", "population": 583056, "countryCode": "SWE" },
+      { "id": 192, "name": "Malmö", "population": 347949, "countryCode": "SWE" }
+    ]
+  },
+  {
+    "code": "POL",
+    "name": "Poland",
+    "continent": "Europe",
+    "surfaceArea": 312679.0,
+    "population": 37850000,
+    "gnp": 674.0,
+    "capital": 200,
+    "cities": [
+      { "id": 200, "name": "Warsaw", "population": 1790658, "countryCode": "POL" },
+      { "id": 201, "name": "Kraków", "population": 803425, "countryCode": "POL" },
+      { "id": 202, "name": "Wrocław", "population": 641928, "countryCode": "POL" }
+    ]
+  },
+  {
+    "code": "GRC",
+    "name": "Greece",
+    "continent": "Europe",
+    "surfaceArea": 131957.0,
+    "population": 10400000,
+    "gnp": 209.9,
+    "capital": 210,
+    "cities": [
+      { "id": 210, "name": "Athens", "population": 3153000, "countryCode": "GRC" },
+      { "id": 211, "name": "Thessaloniki", "population": 1106000, "countryCode": "GRC" },
+      { "id": 212, "name": "Patras", "population": 167446, "countryCode": "GRC" }
+    ]
+  },
+  {
+    "code": "CZE",
+    "name": "Czechia",
+    "continent": "Europe",
+    "surfaceArea": 78865.0,
+    "population": 10700000,
+    "gnp": 281.0,
+    "capital": 220,
+    "cities": [
+      { "id": 220, "name": "Prague", "population": 1324277, "countryCode": "CZE" },
+      { "id": 221, "name": "Brno", "population": 382405, "countryCode": "CZE" },
+      { "id": 222, "name": "Ostrava", "population": 287968, "countryCode": "CZE" }
+    ]
+  },
+  {
+    "code": "HUN",
+    "name": "Hungary",
+    "continent": "Europe",
+    "surfaceArea": 93030.0,
+    "population": 9773000,
+    "gnp": 155.7,
+    "capital": 230,
+    "cities": [
+      { "id": 230, "name": "Budapest", "population": 1756000, "countryCode": "HUN" },
+      { "id": 231, "name": "Debrecen", "population": 201432, "countryCode": "HUN" },
+      { "id": 232, "name": "Szeged", "population": 161879, "countryCode": "HUN" }
+    ]
+  },
+  {
+    "code": "BGR",
+    "name": "Bulgaria",
+    "continent": "Europe",
+    "surfaceArea": 110879.0,
+    "population": 6950000,
+    "gnp": 84.0,
+    "capital": 240,
+    "cities": [
+      { "id": 240, "name": "Sofia", "population": 1241675, "countryCode": "BGR" },
+      { "id": 241, "name": "Plovdiv", "population": 346893, "countryCode": "BGR" },
+      { "id": 242, "name": "Varna", "population": 335177, "countryCode": "BGR" }
+    ]
+  },
+  {
+    "code": "PRT",
+    "name": "Portugal",
+    "continent": "Europe",
+    "surfaceArea": 92212.0,
+    "population": 10300000,
+    "gnp": 249.0,
+    "capital": 250,
+    "cities": [
+      { "id": 250, "name": "Lisbon", "population": 504718, "countryCode": "PRT" },
+      { "id": 251, "name": "Porto", "population": 231962, "countryCode": "PRT" },
+      { "id": 252, "name": "Coimbra", "population": 143396, "countryCode": "PRT" }
+    ]
+  },
+  {
+    "code": "BEL",
+    "name": "Belgium",
+    "continent": "Europe",
+    "surfaceArea": 30528.0,
+    "population": 11590000,
+    "gnp": 533.1,
+    "capital": 260,
+    "cities": [
+      { "id": 260, "name": "Brussels", "population": 185103, "countryCode": "BEL" },
+      { "id": 261, "name": "Antwerp", "population": 529247, "countryCode": "BEL" },
+      { "id": 262, "name": "Ghent", "population": 263621, "countryCode": "BEL" }
+    ]
+  },
+  {
+    "code": "CHE",
+    "name": "Switzerland",
+    "continent": "Europe",
+    "surfaceArea": 41285.0,
+    "population": 8650000,
+    "gnp": 824.7,
+    "capital": 270,
+    "cities": [
+      { "id": 270, "name": "Bern", "population": 144000, "countryCode": "CHE" },
+      { "id": 271, "name": "Zurich", "population": 402762, "countryCode": "CHE" },
+      { "id": 272, "name": "Geneva", "population": 201818, "countryCode": "CHE" }
+    ]
+  },
+  {
+    "code": "NOR",
+    "name": "Norway",
+    "continent": "Europe",
+    "surfaceArea": 385207.0,
+    "population": 5450000,
+    "gnp": 445.5,
+    "capital": 280,
+    "cities": [
+      { "id": 280, "name": "Oslo", "population": 697010, "countryCode": "NOR" },
+      { "id": 281, "name": "Bergen", "population": 286930, "countryCode": "NOR" },
+      { "id": 282, "name": "Trondheim", "population": 210496, "countryCode": "NOR" }
+    ]
+  },
+  {
+    "code": "DNK",
+    "name": "Denmark",
+    "continent": "Europe",
+    "surfaceArea": 43094.0,
+    "population": 5830000,
+    "gnp": 395.4,
+    "capital": 290,
+    "cities": [
+      { "id": 290, "name": "Copenhagen", "population": 638117, "countryCode": "DNK" },
+      { "id": 291, "name": "Aarhus", "population": 285273, "countryCode": "DNK" },
+      { "id": 292, "name": "Odense", "population": 180760, "countryCode": "DNK" }
+    ]
+  },
+  {
+    "code": "IRL",
+    "name": "Ireland",
+    "continent": "Europe",
+    "surfaceArea": 70273.0,
+    "population": 4980000,
+    "gnp": 499.0,
+    "capital": 300,
+    "cities": [
+      { "id": 300, "name": "Dublin", "population": 544107, "countryCode": "IRL" },
+      { "id": 301, "name": "Cork", "population": 210000, "countryCode": "IRL" },
+      { "id": 302, "name": "Limerick", "population": 102287, "countryCode": "IRL" }
+    ]
+  },
+  {
+    "code": "UKR",
+    "name": "Ukraine",
+    "continent": "Europe",
+    "surfaceArea": 603500.0,
+    "population": 44130000,
+    "gnp": 155.6,
+    "capital": 310,
+    "cities": [
+      { "id": 310, "name": "Kyiv", "population": 2963199, "countryCode": "UKR" },
+      { "id": 311, "name": "Kharkiv", "population": 1430885, "countryCode": "UKR" },
+      { "id": 312, "name": "Odesa", "population": 1015378, "countryCode": "UKR" }
+    ]
+  }
+]

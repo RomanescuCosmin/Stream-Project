@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Exerciții Stream API – Q1</title>
+    <script th:src="@{/app.js}" defer></script>
     <style>
         :root{
             --bg:#0b1220; --panel:#121a2b; --muted:#8aa0bf; --text:#e6edf7; --accent:#6ea8fe; --danger:#ff6b6b;
@@ -89,77 +90,39 @@
 
         <div id="message" class="muted" style="margin-top:8px"></div>
     </section>
+
+    <section class="card">
+        <div class="row">
+            <h2>Q1) Cele mai populate orașe din fiecare continent</h2>
+            <span class="pill">Streams: <strong>groupingBy</strong> + <strong>counting</strong></span>
+            <span id="statusCity" class="status muted">gata</span>
+        </div>
+        <p>Apasă Run pentru a cere rezultatele din backend și a le sorta descrescător după #orașe.</p>
+        <div class="row" style="margin:10px 0 14px">
+            <button id="runCity">Run Q2</button>
+            <button id="reloadCity">Reload</button>
+            <button id="clearCity">Clear</button>
+        </div>
+
+        <div class="table-wrap" id="table-wrap_city" hidden>
+            <table id="resultCity">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Continente</th>
+                    <th class="right"># Orașe</th>
+                </tr>
+                </thead>
+                <tbody id="tbodyCity"></tbody>
+            </table>
+        </div>
+
+        <div id="messageCity" class="muted" style="margin-top:8px"></div>
+    </section>
 </main>
 
 <footer>
     Hint: endpoint-ul trebuie să returneze un JSON de forma <code class="inline">{ "Christopher Nolan": 10, "Greta Gerwig": 3, ... }</code>.
 </footer>
-
-<script>
-    const statusEl = document.getElementById('status');
-    const tbody = document.getElementById('tbody');
-    const wrap = document.getElementById('table-wrap');
-    const msg = document.getElementById('message');
-
-    async function fetchQ1() {
-        setStatus('loading');
-        msg.textContent = '';
-        try {
-            const res = await fetch('/stream/exercice/q1', { headers: { 'Accept': 'application/json' }});
-            if (!res.ok) {
-                const text = await res.text();
-                throw new Error(text || ('HTTP ' + res.status));
-            }
-            /** @type {Record<string, number>} */
-            const data = await res.json();
-
-            // transformă în [director, count], sortează desc
-            const rows = Object.entries(data).sort((a,b) => b[1] - a[1]);
-
-            // populate table
-            tbody.innerHTML = '';
-            rows.forEach(([director, count], idx) => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-            <td>${idx + 1}</td>
-            <td>${escapeHtml(director)}</td>
-            <td class="right">${count}</td>`;
-                tbody.appendChild(tr);
-            });
-
-            wrap.hidden = rows.length === 0;
-            if (rows.length === 0) msg.textContent = 'Nu s-au găsit rezultate.';
-            setStatus('ready', `${rows.length} regizori`);
-        } catch (err) {
-            wrap.hidden = true;
-            msg.innerHTML = `<span class="error">Eroare:</span> ${escapeHtml(err.message)}`;
-            setStatus('error');
-        }
-    }
-
-    function setStatus(state, text='') {
-        if (state === 'loading') {
-            statusEl.innerHTML = `<span class="spinner"></span>apel...`;
-        } else if (state === 'error') {
-            statusEl.textContent = 'eroare';
-        } else {
-            statusEl.textContent = text ? `gata · ${text}` : 'gata';
-        }
-    }
-
-    function escapeHtml(s){
-        return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-    }
-
-    document.getElementById('run').addEventListener('click', fetchQ1);
-    document.getElementById('reload').addEventListener('click', fetchQ1);
-    document.getElementById('clear').addEventListener('click', () => {
-        tbody.innerHTML = ''; document.getElementById('table-wrap').hidden = true;
-        msg.textContent = ''; setStatus('ready');
-    });
-
-    // opțional: auto-run la încărcare
-    // fetchQ1();
-</script>
 </body>
 </html>
