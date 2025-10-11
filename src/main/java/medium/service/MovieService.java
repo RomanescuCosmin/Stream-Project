@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -24,5 +25,19 @@ public class MovieService {
         return getDirectorWithMoreMovie;
     }
 
+
+    public Map<String, Set<String>> getUniqueGenresPerDirector() {
+        List<Movie> movieList = repository.findAll();
+
+        return movieList.stream()
+                .filter(f -> f.getGenres() != null && !f.getGenres().isEmpty())
+                .flatMap(movie -> movie.getGenres().stream()
+                        .map(genre -> Map.entry(movie.getDirector(), genre)))
+                .distinct()
+                .collect(Collectors.groupingBy(
+                        Map.Entry::getKey,
+                        Collectors.mapping(Map.Entry::getValue, Collectors.toSet())
+                ));
+    }
 
 }
