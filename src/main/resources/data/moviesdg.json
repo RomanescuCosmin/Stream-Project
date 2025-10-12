@@ -1,0 +1,560 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "year": 2010,
+    "imdb": "tt1375666",
+    "genres": [
+      { "id": 1, "name": "Action" },
+      { "id": 11, "name": "Sci-Fi" },
+      { "id": 12, "name": "Thriller" }
+    ],
+    "directors": [
+      { "id": 101, "name": "Christopher Nolan", "imdb": "nm0634240" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "year": 2014,
+    "imdb": "tt0816692",
+    "genres": [
+      { "id": 11, "name": "Sci-Fi" },
+      { "id": 5, "name": "Drama" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 101, "name": "Christopher Nolan", "imdb": "nm0634240" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "imdb": "tt0468569",
+    "genres": [
+      { "id": 1, "name": "Action" },
+      { "id": 4, "name": "Crime" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 101, "name": "Christopher Nolan", "imdb": "nm0634240" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Memento",
+    "year": 2000,
+    "imdb": "tt0209144",
+    "genres": [
+      { "id": 9, "name": "Mystery" },
+      { "id": 12, "name": "Thriller" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 101, "name": "Christopher Nolan", "imdb": "nm0634240" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Oppenheimer",
+    "year": 2023,
+    "imdb": "tt15398776",
+    "genres": [
+      { "id": 17, "name": "Biography" },
+      { "id": 5, "name": "Drama" },
+      { "id": 7, "name": "History" }
+    ],
+    "directors": [
+      { "id": 101, "name": "Christopher Nolan", "imdb": "nm0634240" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Dunkirk",
+    "year": 2017,
+    "imdb": "tt5013056",
+    "genres": [
+      { "id": 13, "name": "War" },
+      { "id": 5, "name": "Drama" },
+      { "id": 7, "name": "History" }
+    ],
+    "directors": [
+      { "id": 101, "name": "Christopher Nolan", "imdb": "nm0634240" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Tenet",
+    "year": 2020,
+    "imdb": "tt6723592",
+    "genres": [
+      { "id": 1, "name": "Action" },
+      { "id": 11, "name": "Sci-Fi" },
+      { "id": 12, "name": "Thriller" }
+    ],
+    "directors": [
+      { "id": 101, "name": "Christopher Nolan", "imdb": "nm0634240" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Lady Bird",
+    "year": 2017,
+    "imdb": "tt4925292",
+    "genres": [
+      { "id": 5, "name": "Drama" },
+      { "id": 3, "name": "Comedy" }
+    ],
+    "directors": [
+      { "id": 102, "name": "Greta Gerwig", "imdb": "nm1950086" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Little Women",
+    "year": 2019,
+    "imdb": "tt3281548",
+    "genres": [
+      { "id": 5, "name": "Drama" },
+      { "id": 10, "name": "Romance" }
+    ],
+    "directors": [
+      { "id": 102, "name": "Greta Gerwig", "imdb": "nm1950086" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Barbie",
+    "year": 2023,
+    "imdb": "tt1517268",
+    "genres": [
+      { "id": 3, "name": "Comedy" },
+      { "id": 2, "name": "Adventure" },
+      { "id": 6, "name": "Fantasy" }
+    ],
+    "directors": [
+      { "id": 102, "name": "Greta Gerwig", "imdb": "nm1950086" }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "imdb": "tt0110912",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 103, "name": "Quentin Tarantino", "imdb": "nm0000233" }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "imdb": "tt0361748",
+    "genres": [
+      { "id": 13, "name": "War" },
+      { "id": 2, "name": "Adventure" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 103, "name": "Quentin Tarantino", "imdb": "nm0000233" }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Django Unchained",
+    "year": 2012,
+    "imdb": "tt1853728",
+    "genres": [
+      { "id": 14, "name": "Western" },
+      { "id": 5, "name": "Drama" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 103, "name": "Quentin Tarantino", "imdb": "nm0000233" }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "The Irishman",
+    "year": 2019,
+    "imdb": "tt1302006",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 5, "name": "Drama" },
+      { "id": 17, "name": "Biography" }
+    ],
+    "directors": [
+      { "id": 104, "name": "Martin Scorsese", "imdb": "nm0000217" }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Goodfellas",
+    "year": 1990,
+    "imdb": "tt0099685",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 104, "name": "Martin Scorsese", "imdb": "nm0000217" }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Jaws",
+    "year": 1975,
+    "imdb": "tt0073195",
+    "genres": [
+      { "id": 12, "name": "Thriller" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 105, "name": "Steven Spielberg", "imdb": "nm0000229" }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "imdb": "tt0083866",
+    "genres": [
+      { "id": 16, "name": "Family" },
+      { "id": 11, "name": "Sci-Fi" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 105, "name": "Steven Spielberg", "imdb": "nm0000229" }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Jurassic Park",
+    "year": 1993,
+    "imdb": "tt0107290",
+    "genres": [
+      { "id": 1, "name": "Action" },
+      { "id": 2, "name": "Adventure" },
+      { "id": 11, "name": "Sci-Fi" }
+    ],
+    "directors": [
+      { "id": 105, "name": "Steven Spielberg", "imdb": "nm0000229" }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Arrival",
+    "year": 2016,
+    "imdb": "tt2543164",
+    "genres": [
+      { "id": 11, "name": "Sci-Fi" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 106, "name": "Denis Villeneuve", "imdb": "nm0898288" }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Dune: Part One",
+    "year": 2021,
+    "imdb": "tt1160419",
+    "genres": [
+      { "id": 11, "name": "Sci-Fi" },
+      { "id": 2, "name": "Adventure" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 106, "name": "Denis Villeneuve", "imdb": "nm0898288" }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Prisoners",
+    "year": 2013,
+    "imdb": "tt1392214",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 12, "name": "Thriller" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 106, "name": "Denis Villeneuve", "imdb": "nm0898288" }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Spirited Away",
+    "year": 2001,
+    "imdb": "tt0245429",
+    "genres": [
+      { "id": 15, "name": "Animation" },
+      { "id": 6, "name": "Fantasy" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 107, "name": "Hayao Miyazaki", "imdb": "nm0594503" }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "My Neighbor Totoro",
+    "year": 1988,
+    "imdb": "tt0096283",
+    "genres": [
+      { "id": 15, "name": "Animation" },
+      { "id": 16, "name": "Family" },
+      { "id": 6, "name": "Fantasy" }
+    ],
+    "directors": [
+      { "id": 107, "name": "Hayao Miyazaki", "imdb": "nm0594503" }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Princess Mononoke",
+    "year": 1997,
+    "imdb": "tt0119698",
+    "genres": [
+      { "id": 15, "name": "Animation" },
+      { "id": 6, "name": "Fantasy" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 107, "name": "Hayao Miyazaki", "imdb": "nm0594503" }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Parasite",
+    "year": 2019,
+    "imdb": "tt6751668",
+    "genres": [
+      { "id": 5, "name": "Drama" },
+      { "id": 12, "name": "Thriller" }
+    ],
+    "directors": [
+      { "id": 108, "name": "Bong Joon-ho", "imdb": "nm0094435" }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Memories of Murder",
+    "year": 2003,
+    "imdb": "tt0353969",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 5, "name": "Drama" },
+      { "id": 12, "name": "Thriller" }
+    ],
+    "directors": [
+      { "id": 108, "name": "Bong Joon-ho", "imdb": "nm0094435" }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "imdb": "tt2278388",
+    "genres": [
+      { "id": 3, "name": "Comedy" },
+      { "id": 5, "name": "Drama" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 109, "name": "Wes Anderson", "imdb": "nm0027572" }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Moonrise Kingdom",
+    "year": 2012,
+    "imdb": "tt1748122",
+    "genres": [
+      { "id": 10, "name": "Romance" },
+      { "id": 3, "name": "Comedy" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 109, "name": "Wes Anderson", "imdb": "nm0027572" }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Alien",
+    "year": 1979,
+    "imdb": "tt0078748",
+    "genres": [
+      { "id": 8, "name": "Horror" },
+      { "id": 11, "name": "Sci-Fi" }
+    ],
+    "directors": [
+      { "id": 110, "name": "Ridley Scott", "imdb": "nm0000631" }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "The Martian",
+    "year": 2015,
+    "imdb": "tt3659388",
+    "genres": [
+      { "id": 11, "name": "Sci-Fi" },
+      { "id": 2, "name": "Adventure" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 110, "name": "Ridley Scott", "imdb": "nm0000631" }
+    ]
+  },
+  {
+    "id": 31,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "imdb": "tt0120737",
+    "genres": [
+      { "id": 6, "name": "Fantasy" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 111, "name": "Peter Jackson", "imdb": "nm0001392" }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "imdb": "tt0167261",
+    "genres": [
+      { "id": 6, "name": "Fantasy" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 111, "name": "Peter Jackson", "imdb": "nm0001392" }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "imdb": "tt0167260",
+    "genres": [
+      { "id": 6, "name": "Fantasy" },
+      { "id": 2, "name": "Adventure" }
+    ],
+    "directors": [
+      { "id": 111, "name": "Peter Jackson", "imdb": "nm0001392" }
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Titanic",
+    "year": 1997,
+    "imdb": "tt0120338",
+    "genres": [
+      { "id": 5, "name": "Drama" },
+      { "id": 10, "name": "Romance" }
+    ],
+    "directors": [
+      { "id": 112, "name": "James Cameron", "imdb": "nm0000116" }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "The Terminator",
+    "year": 1984,
+    "imdb": "tt0088247",
+    "genres": [
+      { "id": 1, "name": "Action" },
+      { "id": 11, "name": "Sci-Fi" }
+    ],
+    "directors": [
+      { "id": 112, "name": "James Cameron", "imdb": "nm0000116" }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Se7en",
+    "year": 1995,
+    "imdb": "tt0114369",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 12, "name": "Thriller" }
+    ],
+    "directors": [
+      { "id": 113, "name": "David Fincher", "imdb": "nm0000399" }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Fight Club",
+    "year": 1999,
+    "imdb": "tt0137523",
+    "genres": [
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 113, "name": "David Fincher", "imdb": "nm0000399" }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "The Social Network",
+    "year": 2010,
+    "imdb": "tt1285016",
+    "genres": [
+      { "id": 5, "name": "Drama" },
+      { "id": 17, "name": "Biography" }
+    ],
+    "directors": [
+      { "id": 113, "name": "David Fincher", "imdb": "nm0000399" }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "No Country for Old Men",
+    "year": 2007,
+    "imdb": "tt0477348",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 12, "name": "Thriller" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 114, "name": "Joel Coen", "imdb": "nm0001054" },
+      { "id": 115, "name": "Ethan Coen", "imdb": "nm0001053" }
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Fargo",
+    "year": 1996,
+    "imdb": "tt0116282",
+    "genres": [
+      { "id": 4, "name": "Crime" },
+      { "id": 5, "name": "Drama" }
+    ],
+    "directors": [
+      { "id": 114, "name": "Joel Coen", "imdb": "nm0001054" },
+      { "id": 115, "name": "Ethan Coen", "imdb": "nm0001053" }
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "imdb": "tt1392190",
+    "genres": [
+      { "id": 1, "name": "Action" },
+      { "id": 2, "name": "Adventure" },
+      { "id": 11, "name": "Sci-Fi" }
+    ],
+    "directors": [
+      { "id": 120, "name": "George Miller", "imdb": "nm0588340" }
+    ]
+  }
+]
