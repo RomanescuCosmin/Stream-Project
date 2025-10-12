@@ -171,3 +171,70 @@ document.getElementById('clearGenres')?.addEventListener('click', () => {
     setStatusFor(statusGenres, 'ready');
 });
 
+
+const statusGenresCount = document.getElementById('statusGenresCount');
+const tbodyGenresCount = document.getElementById('tbodyGenresCount');
+const wrapGenresCount = document.getElementById('table-wrap_genresCount');
+const msgGenresCount = document.getElementById('messageGenresCount');
+
+function extractNameKey(k) {
+    if (k == null) return '';
+    if (typeof k === 'string') {
+        const m = k.match(/name['"]?\s*[:=]\s*['"]?([^,'"}]+)/i);
+        return m ? m[1] : k;
+    }
+    if (typeof k === 'object') {
+        if ('name' in k) return String(k.name);
+        try { return JSON.stringify(k); } catch { return String(k); }
+    }
+    return String(k);
+}
+
+async function fetchQ3Different() {
+    setStatusFor(statusGenresCount, 'loading');
+    msgGenresCount.textContent = '';
+    try {
+        const res = await fetch('/stream/exercice/q3-different', { headers: { 'Accept': 'application/json' } });
+        if (!res.ok) throw new Error(await res.text() || ('HTTP ' + res.status));
+        const data = await res.json();
+        const rows = [];
+        if (data && typeof data === 'object') {
+            Object.entries(data).forEach(([directorKey, genresMap]) => {
+                const director = extractNameKey(directorKey);
+                if (genresMap && typeof genresMap === 'object') {
+                    Object.entries(genresMap).forEach(([genreKey, count]) => {
+                        const genre = extractNameKey(genreKey);
+                        rows.push({ director, genre, count: Number(count) || 0 });
+                    });
+                }
+            });
+        }
+        rows.sort((a,b)=> b.count - a.count || a.director.localeCompare(b.director) || a.genre.localeCompare(b.genre));
+        tbodyGenresCount.innerHTML = '';
+        rows.forEach((r, i) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+        <td>${i + 1}</td>
+        <td>${escapeHtml(r.director)}</td>
+        <td>${escapeHtml(r.genre)}</td>
+        <td class="right">${r.count}</td>`;
+            tbodyGenresCount.appendChild(tr);
+        });
+        wrapGenresCount.hidden = rows.length === 0;
+        if (rows.length === 0) msgGenresCount.textContent = 'Nu s-au găsit rezultate.';
+        setStatusFor(statusGenresCount, 'ready', `${rows.length} rânduri`);
+    } catch (err) {
+        wrapGenresCount.hidden = true;
+        msgGenresCount.innerHTML = `<span class="error">Eroare:</span> ${escapeHtml(err.message)}`;
+        setStatusFor(statusGenresCount, 'error');
+    }
+}
+
+document.getElementById('runGenresCount')?.addEventListener('click', fetchQ3Different);
+document.getElementById('reloadGenresCount')?.addEventListener('click', fetchQ3Different);
+document.getElementById('clearGenresCount')?.addEventListener('click', () => {
+    tbodyGenresCount.innerHTML = '';
+    wrapGenresCount.hidden = true;
+    msgGenresCount.textContent = '';
+    setStatusFor(statusGenresCount, 'ready');
+});

@@ -25,8 +25,8 @@ public class MovieDgService {
 
         Map<Director, Map<Genre, Long>> collect = movieDGList
                 .stream()
-                .map(movie -> movie.getDirectors().stream().map(director -> new DirectorGenresPair(director, movie.getGenres())).toList()).
-                flatMap(Collection::stream)
+                .map(movie -> movie.getDirectors().stream().map(director -> new DirectorGenresPair(director, movie.getGenres())).toList())
+                .flatMap(Collection::stream)
                 .map(directorGenres -> directorGenres.genreList().stream().map(genre -> new DirectorGenrePair(directorGenres.director(), genre)).toList())
                 .flatMap(Collection::stream)
                 .collect(Collectors.groupingBy(DirectorGenrePair::director, Collectors.groupingBy(DirectorGenrePair::genre, Collectors.counting())));
@@ -37,11 +37,6 @@ public class MovieDgService {
         });
 
         return collect;
-    }
-
-    public static void main(String[] args) {
-        MovieDgService movieDgService = new MovieDgService();
-        movieDgService.getNumberOfGenresOfEachDirector();
     }
 
 }
