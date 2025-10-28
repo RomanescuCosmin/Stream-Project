@@ -1,4 +1,4 @@
-package medium.hackerRank;
+package medium.data_structure;
 
 import java.io.BufferedReader;
 import java.io.IOException;
