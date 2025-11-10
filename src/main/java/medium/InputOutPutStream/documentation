@@ -1,0 +1,35 @@
+Low level streams -  un stream care trimite informatiile byte cu byte
+High level streams - un stream care trimite informatiile exact ca valorile initiale ( int ca int .. etc) nu trebuie sa
+convertim in byte, face wrap la un low level stream
+
+
+InputStreams / read                    OutputStreams / write
+
+
+
+ /**
+         *
+         * Low-Level
+         *      InputStream
+         *      OutputStream
+         *      FileInputStream
+         *      FileOutputStream
+         *
+         *
+         * High-Level
+         *      DataInputStream
+         *      DataOutputStream
+         *      PrintStream
+         *      PrintWriter
+         *      BufferedReader
+         *      BufferedWriter
+         *      ObjectInputStream                           Serializable
+         *      ObjectOutputStream
+         *
+         *
+         *      java.io.File    (legacy)
+         *      java.nio
+         *              Path, Paths, Files
+         */
+
+
